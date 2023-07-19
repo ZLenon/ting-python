@@ -16,4 +16,8 @@ def remove(instancia):
 
 
 def file_metadata(instancia, posicao):
-    """Aqui irá sua implementação"""
+    try:
+        file = instancia.search(posicao)
+        return print(file, file=sys.stdout)
+    except Exception:
+        print("Posição inválida", file=sys.stderr)
