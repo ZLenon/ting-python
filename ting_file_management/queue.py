@@ -52,5 +52,6 @@ class Queue(AbstractQueue):
             # Tenta acessar o elemento no índice fornecido
             return self._fila[index]
         except Exception:
-            # Gera uma exceção de índice inválido ou inexistente se ocorrer um erro
+            # Gera uma exceção de índice inválido 
+            # ou inexistente se ocorrer um erro
             raise IndexError("Índice Inválido ou Inexistente")
