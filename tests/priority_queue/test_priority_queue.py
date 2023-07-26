@@ -9,7 +9,7 @@ def test_basic_priority_queueing():
     process("statics/nome_pedro.txt", fila)
     process("statics/novo_paradigma_globalizado-min.txt", fila)
     process("statics/arquivo_teste.txt", fila)
-    
+
     assert len(fila.high_priority) == 2
     assert len(fila.regular_priority) == 2
 
